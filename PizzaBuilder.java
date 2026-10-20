@@ -64,7 +64,7 @@ public class PizzaBuilder {
 
     public PizzaBuilder addTopping(String topping) {
         if (topping == null ||
-                !toppings.contains(topping)) {
+                !AVAILABLE_TOPPINGS.contains(topping)) {
             throw new IllegalArgumentException(
                     "Invalid topping"
             );
