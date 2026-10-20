@@ -29,20 +29,13 @@ public class PizzaBuilder {
                     "Ham and Pineapple"
             );
 
-    private static final List<String> CHAINS =
-            Arrays.asList(
-                    "PizzaFiles.Pizza Hut",
-                    "Little Caesars",
-                    "Dominos"
-            );
-
     public PizzaBuilder chooseChain(String chain) {
         if (chain == null ||
-                !(chain.equals("PizzaFiles.Pizza Hut")
+                !(chain.equals("Pizza Hut")
                 || chain.equals("Little Caesars")
                 || chain.equals("Dominos"))) {
             throw new IllegalArgumentException(
-                    "Choose from one of the three available chains"
+                    "Choose from one of the three available chains: Pizza Hut, Little Caesars, Dominos"
             );
         }
 
