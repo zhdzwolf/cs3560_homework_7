@@ -25,7 +25,7 @@ public class PizzaDriver {
         thePizza.eat();
 
         Pizza myPizza = new PizzaBuilder()
-                .chooseChain("PizzaFiles.Pizza Hut")
+                .chooseChain("Pizza Hut")
                 .setSize("Large")
                 .addTopping("Pepperoni")
                 .addTopping("Sausage")
