@@ -1,3 +1,5 @@
+package PizzaFiles;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -29,14 +31,14 @@ public class PizzaBuilder {
 
     private static final List<String> CHAINS =
             Arrays.asList(
-                    "Pizza Hut",
+                    "PizzaFiles.Pizza Hut",
                     "Little Caesars",
                     "Dominos"
             );
 
     public PizzaBuilder chooseChain(String chain) {
         if (chain == null ||
-                !(chain.equals("Pizza Hut")
+                !(chain.equals("PizzaFiles.Pizza Hut")
                 || chain.equals("Little Caesars")
                 || chain.equals("Dominos"))) {
             throw new IllegalArgumentException(
@@ -77,7 +79,7 @@ public class PizzaBuilder {
     public Pizza build() {
         if (size == null) {
             throw new IllegalArgumentException(
-                    "Pizza size is must be set before building."
+                    "PizzaFiles.Pizza size is must be set before building."
             );
         }
 

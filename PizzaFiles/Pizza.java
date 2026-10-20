@@ -1,3 +1,5 @@
+package PizzaFiles;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +15,7 @@ public class Pizza {
     }
 
     public void eat() {
-        System.out.println("Pizza Chain: " + chain);
+        System.out.println("PizzaFiles.Pizza Chain: " + chain);
         System.out.println("Size: " + size);
         System.out.println("Toppings:");
 

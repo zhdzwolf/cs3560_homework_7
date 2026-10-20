@@ -1,3 +1,6 @@
+import PizzaFiles.Pizza;
+import PizzaFiles.PizzaBuilder;
+
 public class PizzaDriver {
     public static void main(String[] args) {
         Pizza yourPizza = new PizzaBuilder()
@@ -22,7 +25,7 @@ public class PizzaDriver {
         thePizza.eat();
 
         Pizza myPizza = new PizzaBuilder()
-                .chooseChain("Pizza Hut")
+                .chooseChain("PizzaFiles.Pizza Hut")
                 .setSize("Large")
                 .addTopping("Pepperoni")
                 .addTopping("Sausage")
